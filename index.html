@@ -1,0 +1,351 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>VR-Funk : Expanding Vision Tech</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Irish+Grover&family=Londrina+Shadow&family=Noto+Serif+Vithkuqi&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+<link rel="apple-touch-icon" sizes="180x180" href="https://img.icons8.com/color/48/pokeball--v1.png">
+<link rel="icon" type="image/png" sizes="32x32" href="https://img.icons8.com/color/48/pokeball--v1.png">
+<link rel="icon" type="image/png" sizes="16x16" href="https://img.icons8.com/color/48/pokeball--v1.png">
+    <style>
+      *{
+        font-family: Georgia, 'Times New Roman', Times, serif;
+      }
+      .card-img, .card-img-bottom, .card-img-top {
+      width: 94%;}
+      
+      .hero{
+        margin-top: 50px;
+        margin-bottom: 50px;
+        margin-left: 20px;
+        margin-right: 20px;
+        padding-left: 10px;
+      }
+
+      .shadow-2{
+        border: 1px 
+    }
+    .carouselcont{  
+        width: 100%;
+        height: 250px !important;
+        border: 0;
+        border-radius: 10px;
+        }
+  
+  @media (max-width: 768px) {
+      .mobilescreen, .hero, .closebutton {
+        display: none;
+      }
+      .mobilecontainer{
+        margin-top: -3rem!important;
+      }
+      .card{
+        margin: 0;
+        padding: 1rem!important;
+      }
+      .card{
+        width: 26rem!important;
+        display: inline-flex;
+        justify-content: center;
+      }
+      .card-img-top{
+      width: auto;
+      height: 260px;
+      border: 0px;
+      border-radius: 8px;}
+      
+    }
+
+    .container, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl {
+    max-width: 1350px;
+}
+
+
+
+@media (min-width: 769px){
+  .card-img-top{
+  width: auto;
+  height: 200px;
+  border: 0px;
+  border-radius: 8px;
+}
+
+}
+.form-login {
+    margin: 10px;
+    padding: 20px;
+}
+.loginfont{
+        font-family: Georgia, 'Times New Roman', Times, serif;
+    }
+    </style>
+  </head>
+  <body>
+
+<div class="modal" id="myModal">
+    <div class="modal-dialog">
+        <div class="modal-content">
+
+            <!-- Modal Header -->
+            <div class="modal-header">
+                <h4 class="modal-title">Auto-open Modal</h4>
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+            </div>
+
+            <!-- Modal Body -->
+            <div class="modal-body">
+                <p>This modal will open automatically after 10 seconds.</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+    
+    <nav class="navbar navbar-expand-lg mt-3">
+      <div class="container-fluid">
+        <a class="navbar-brand mx-4" href="#" style="font-family: 'Noto Serif Vithkuqi', serif;">VR-Funk!</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse mx-4" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="#">About us</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link active dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Products
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">V - 1.0</a></li>
+                <li><a class="dropdown-item" href="#">V - 2.0</a></li>
+                <li><hr class="dropdown-divider"></li>
+                <li><a class="dropdown-item" href="#">V - Latest</a></li>
+              </ul>
+            </li>
+          </ul>
+          <form class="d-flex" role="search">
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-dark" type="submit">Search</button>
+          </form>
+          <button class="btn btn-dark ms-2  closebutton " data-bs-toggle="modal" data-bs-target="#exampleModal">Login</button>
+        </div>
+      </div>
+    </nav>
+     
+    
+
+<div class="container" style="height: 300px;">
+  <div class="row">
+    <div class="col-8">
+      <!-- Hero -->
+        <div class="container mt-5" >
+          <div class="p-4 shadow-2 rounded-3 hero" style="padding-left: 80px;">
+            <h2 class="mb-4">Welcome to VR-Funk!</span></h2>
+            <p>Our cutting-edge technology and innovative designs are crafted to provide you with an unparalleled virtual reality experience. Dive into fantastical worlds, embark on thrilling adventures, or simply escape into a realm of your choosing. With VR-Funk, the possibilities are endless.</p>
+            <button type="button" class="btn btn-outline-dark">
+              Buy Now
+            </button>
+          </div>
+        </div>
+      <!-- Hero -->
+    </div>
+
+
+    <div class="col-4" style="display: flex; align-items: center; justify-content: center; margin-top: 40px; height: 300px;">
+      <div class="mb-5 container carouselcustom">
+        <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="Heroimage.jpg" class="d-block carouselcont" alt="...">
+            </div>
+            <div class="carousel-item">
+              <img src="Heroimage.jpg" class="d-block carouselcont" alt="...">
+            </div>
+            <div class="carousel-item">
+              <img src="Heroimage.jpg" class="d-block carouselcont" alt="...">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="container d-flex mx-auto justify-content-center mt-5 mobilecontainer"><h3 class="mobilescreen" style="font-family: 'Noto Serif Vithkuqi', serif; font-size: 26px;">Images!</h3></div>
+  <div id="carouselExample" class="carousel slide mx-auto" style="width: 60%; height: 60%;">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="Oculus.jpg" class="d-block w-100" alt="...">
+      </div>
+      <div class="carousel-item">
+        <img src="Oculus.jpg" class="d-block w-100" alt="...">
+      </div>
+      <div class="carousel-item">
+        <img src="Oculus.jpg" class="d-block w-100" alt="...">
+      </div>
+    </div>
+  </div>
+
+<br>
+<div class="container d-flex mx-auto justify-content-center mt-5 mobilecontainer"><h3 class="mobilescreen" style="font-family: 'Noto Serif Vithkuqi', serif; font-size: 26px;">About VR-Funk!</h3></div>
+    <div class="container-md pt-3 col-md mb-5 mt-3">
+      <div class="row">
+        <div class="col px-2 d-flex justify-content-center my-3 mobilecard" >
+          <div class="card" style="width: 18rem;">
+            <img src="https://i2.wp.com/www.nashvillechatterclass.com/wp-content/uploads/2017/10/Sony-PS-VR-2.jpg" class="card-img-top m-2" alt="..." width="90%">
+            <div class="card-body">
+              <h5 class="card-title">Immersive Experience</h5>
+              <p class="card-text">Our VR headsets boast high-resolution graphics that bring every detail to life. With VR-Funk, you don’t just play the game, you live it.</p>
+            </div>
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item">⭐⭐⭐⭐⭐</li>
+            </ul>
+            </div> 
+        </div>
+        <div class="col px-2 d-flex justify-content-center  my-3">
+          <div class="card" style="width: 18rem;">
+            <img src="https://th.bing.com/th/id/OIP.4TYzqCIu_lNZH2yuffKyRgHaEK?rs=1&pid=ImgDetMain" class="card-img-top m-2" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">High-Resolution Graphics</h5>
+              <p class="card-text">Dive into a world beyond the confines of reality with our state-of-the-art VR technology. Our headsets offer a seamless blend of comfort and functionality, providing an immersive experience like no other.</p>
+            </div>
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item">⭐⭐⭐⭐⭐</li>
+            </ul>
+          </div>
+        </div>
+        <div class="col px-2 d-flex justify-content-center  my-3">
+          <div class="card" style="width: 18rem;">
+            <img src="https://th.bing.com/th/id/OIP.BPQK9Zi0SKIfI-kKMmfEkwAAAA?w=325&h=325&rs=1&pid=ImgDetMain" class="card-img-top m-2" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">User-Friendly Interface</h5>
+              <p class="card-text">Navigate through your virtual world with ease. Our user-friendly interface ensures a smooth and intuitive experience, making it easy for both beginners and seasoned gamers.</p>
+            </div>
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item">⭐⭐⭐⭐⭐</li>
+            </ul>   
+          </div>
+        </div>
+        <div class="col px-2 d-flex justify-content-center  my-3">
+          <div class="card" style="width: 18rem;">
+            <img src="https://th.bing.com/th/id/OIP.SrYE80ZnDK7ctyybZzFjeQHaE7?w=960&h=639&rs=1&pid=ImgDetMain" class="card-img-top m-2" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Wide Range of Content</h5>
+              <p class="card-text">From action-packed adventures to serene landscapes, our extensive library of VR content caters to all tastes and preferences. With VR-Funk, there’s always a new world to explore.</p>
+            </div>
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item">⭐⭐⭐⭐⭐</li>
+            </ul>
+          </div>
+          
+        </div>
+      </div>
+    </div>
+    <div class="container d-flex mx-auto justify-content-center"><h3 style="font-family: 'Noto Serif Vithkuqi', serif; font-size: 26px;">Testimonials!</h3></div>
+    
+    <div class="row row-cols-1 row-cols-md-2 g-4 mx-4 mt-1 w-auto mb-5">
+      <div class="col">
+        <div class="card px-4 py-4">
+          <div class="card-body">
+            <h5 class="card-title">John Doe, VR Enthusiast</h5>
+            <p class="card-text pt-3">VR-Funk has truly revolutionized my gaming experience. The immersive experience is unlike any other. It’s not just a game, it’s a whole new reality.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card px-4 py-4 ">
+          <div class="card-body">
+            <h5 class="card-title">Jane Smith, Tech Blogger</h5>
+            <p class="card-text pt-3">The high-resolution graphics of VR-Funk headsets are simply stunning. Every detail is so lifelike, it feels like you’re living the game, not just playing it.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card px-4 py-4">
+          <div class="card-body">
+            <h5 class="card-title">Robert Brown, Professional Gamer</h5>
+            <p class="card-text pt-3">The user-friendly interface of VR-Funk is a game-changer. It’s intuitive and easy to navigate, making the gaming experience smooth and enjoyable.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card px-4 py-4">
+          <div class="card-body">
+            <h5 class="card-title">Emily Johnson, Casual Gamer</h5>
+            <p class="card-text pt-3">The wide range of content available on VR-Funk is impressive. There’s something for everyone, from action-packed adventures to peaceful landscapes. It’s like having a new world at your fingertips.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer class="bg-white text-center text-white">
+      <!-- Grid container -->
+      <div class="container p-4 pb-0">
+        <!-- Section: Social media -->
+        <section class="mb-4">
+          <!-- Facebook -->
+          <a
+            class="btn text-white btn-floating m-1"
+            style="background-color: #3b5998;"
+            href="#!"
+            role="button"
+            ><i class="fab fa-facebook-f"></i></a>
+    
+          <!-- Twitter -->
+          <a
+            class="btn text-white btn-floating m-1"
+            style="background-color: #55acee;"
+            href="#!"
+            role="button"
+><i class="fab fa-twitter"></i></a>
+    
+          <!-- Google -->
+          <a
+            class="btn text-white btn-floating m-1"
+            style="background-color: #dd4b39;"
+            href="#!"
+            role="button"><i class="fab fa-google"></i></a>
+    
+          <!-- Instagram -->
+          <a class="btn text-white btn-floating m-1" style="background-color: #ac2bac;" href="#" role="button">
+            <i class="fab fa-instagram"></i>
+          </a>
+    
+          <!-- Linkedin -->
+          <a
+            class="btn text-white btn-floating m-1"
+            style="background-color: #0082ca;"
+            href="#!"
+            role="button"><i class="fab fa-linkedin-in"></i></a>
+          <!-- Github -->
+          <a
+            class="btn text-white btn-floating m-1"
+            style="background-color: #333333;"
+            href="#!"
+            role="button"><i class="fab fa-github"></i></a>
+        </section>
+        <!-- Section: Social media -->
+      </div>
+      <!-- Grid container -->
+    
+      <!-- Copyright -->
+      <div class="text-center p-3" style="background-color: rgb(244, 244, 244); color: black;">
+        Made with &#10084; on Bootstrap© 2023 Copyright:
+        <a href="#">VR-Funk!</a>
+      </div>
+      <!-- Copyright -->
+    </footer>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+  <scrip src="script.js"></script>
+  </body>
+</html>
